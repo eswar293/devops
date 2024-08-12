@@ -1,4 +1,3 @@
-
 # This file is about creating the DockerFile for node image
 
 FROM node:13-alpine
