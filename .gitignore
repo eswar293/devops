@@ -52,3 +52,6 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+#.sit local machine specific files 
+.sit*
