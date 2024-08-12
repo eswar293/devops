@@ -1,0 +1,20 @@
+apply plugin: "maven-publish"
+publishing {
+    publications {
+            maven(MavenPublication) {
+	                artifacts("build\libs\my-app-$version" + ".jar") {
+			                extension 'jar'
+					            }
+						            }
+							        }
+								}
+								  repositories {
+								          maven {
+									              name "devops"
+										                  url "http://128.199.22.45:8081/repository/maven-snapshots/"
+												              credentials {
+													                      username project.repoUser
+															                      password project.repoPassword
+																	                  }
+																			          }
+																				      }
